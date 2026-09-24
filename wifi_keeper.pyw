@@ -38,7 +38,7 @@ def build_logger() -> logging.Logger:
 class KeeperApp:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("武科大校园网守护")
+        self.root.title("武科大校园网自动认证助手")
         self.root.geometry("520x440")
         self.root.minsize(480, 420)
         self.logger = build_logger()

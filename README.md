@@ -6,7 +6,7 @@
 
 ## 使用
 
-1. 在 Windows 10/11 下载并双击 Release 中的 `WUST-CampusNet-Keeper.exe`。首次运行填入学号、认证密码。
+1. 在 Windows 10/11 下载并双击 Release 中的 `武科大校园网自动认证助手.exe`。首次运行填入学号、认证密码。
 2. 连接校园 Wi-Fi 后点击“自动获取”，程序会从学校门户的 `/api/config` 读取当前 `nasId`。如果获取失败，在浏览器打开 `http://59.68.177.9/`，将最终认证页地址粘贴到“网关 ID 或页面地址”一栏，再点击保存。程序只保存其中的 `nasId` 数字；也可以直接填写该数字。不要分享包含学号、IP 等信息的完整地址。
 3. 按需勾选“登录 Windows 后自动启动”，点击“保存并开始监控”。以后启动时会自动读取配置并监控。
 4. “立即检测并尝试认证”会马上查询门户状态；若已下线，将使用保存的学号和密码尝试登录。门户已在线时不会重复登录。关闭窗口会停止本次监控；开机启动设置仍会保留，取消勾选并保存即可关闭。
@@ -47,7 +47,7 @@ pyw -3 wifi_keeper.pyw
 打包需要 PyInstaller：
 
 ```powershell
-py -3 -m PyInstaller --noconfirm --clean --onefile --windowed --name WUST-CampusNet-Keeper wifi_keeper.pyw
+py -3 -m PyInstaller --noconfirm --clean --onefile --windowed --name 武科大校园网自动认证助手 wifi_keeper.pyw
 ```
 
 离线测试：
